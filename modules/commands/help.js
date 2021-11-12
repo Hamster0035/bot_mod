@@ -2,7 +2,7 @@ module.exports.config = {
     name: "help",
     version: "1.1.2",
     hasPermssion: 0,
-    credits: "HelyT",
+    credits: "Hamster",
     description: "Help giống Spermbot :3",
     commandCategory: "All lệnh",
     usages: "[lệnh]",
