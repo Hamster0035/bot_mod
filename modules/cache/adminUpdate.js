@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "adminUpdate",
 	eventType: ["log:thread-admins","log:thread-name", "log:user-nickname"],
 	version: "1.0.1",
-	credits: "Mirai Team",
+	credits: "Hamster",
 	description: "Cập nhật thông tin nhóm một cách nhanh chóng",
     envConfig: {
         autoUnsend: true,
