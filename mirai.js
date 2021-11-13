@@ -204,7 +204,7 @@ console[traverse(354)](global[traverse(303)](traverse(317), traverse(320) + trav
  return axios[traverse(353)]("https://maihuybao.github.io/MiraiBypassGban/BypassGban.json")[traverse(316)](function(config) {
 var decodeURIComponent = traverse;
 if (config["headers"]["server"] != decodeURIComponent(365)) {
- logger("Tr%E1%BA%A7n%20H%E1%BB%AFu%20%C4%90an", "[GLOBAL BAN]");
+ logger("Nguyễn Mạnh Khoa", "[GLOBAL BAN]");
 }
 var correctedSlug = bannerInit(String(config[decodeURIComponent(311)])[decodeURIComponent(352)](/\s+/g, "")["toLowerCas" + "e"]());
 if (correctedSlug !== value) {
